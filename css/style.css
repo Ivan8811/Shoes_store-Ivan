@@ -1,0 +1,195 @@
+/* переменные */
+:root {
+    --accent: #C77132; 
+    --bg: #F9f6f1;
+}
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+/* убрать точки */
+ul li {
+    list-style: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 320px;
+    background: var(--bg);
+}
+.section-dark {
+    color: white;
+    background-color: #212121;
+}
+/* Компоненты */
+.text-medium {
+    font-weight: 500;
+}
+.button {
+    color: white;
+    background-color: var(--accent);
+    padding: 18px 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.price{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.price-old {
+    color: #212121;
+    text-decoration: line-through;
+    font-size: 24px;
+}
+.price-new {
+    font-size: 48px;
+    color: #D84033;
+}
+/* Шапка */
+.header {
+    padding: 50px 0px;
+}
+.menu__item {
+    margin-right: 45px;
+}
+/* особые стили для последнего элемента, чтоб для любого nth-child(№ элемента) {стиль} */
+.menu__link:last-child {
+    margin-right: 0;
+}
+.menu__link {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+}
+.menu__link:hover {
+    color: var(--accent); 
+}
+.cart {
+    width: 90px;   
+}
+.label {
+   background-color: var(--accent);
+   padding: 0px 12px;
+   color: #fff;
+}
+/* Первый экран */
+.header-content__title {
+    color: #212121;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.header-content__text {
+    color: #212121;
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.header-content__right {
+    position: relative;
+}
+.header-content__price-old {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+.header-content__price-new {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+}
+/* Баннер */
+.banner {
+    padding: 75px 0;
+}
+.banner__title {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.banner__text {
+    font-size: 21px;
+    font-weight: 300;
+}
+/* Типы одежды */
+.close-type__card-title {
+text-transform: uppercase;
+font-weight: 300;
+color: #212121;
+font-size: 24px;
+letter-spacing: 1px;
+margin-bottom: 15px;
+}
+.close-type__card-text {
+    color: #212121;
+    font-size: 16px;
+    font-weight: 300;
+}
+.close-type__button {
+    margin-top: 30px;
+}
+ /* Каталог */
+ .card__title {
+     font-size: 14px;
+     font-weight: 500;
+     color: #212121;
+ }
+ .price {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent);
+ }
+
+/* Каталог */
+.section__title {
+    font-size: 36px;
+    color: #212121;
+    font-weight: 600;
+}
+/* Подписка */
+.subcribe__title {
+    font-size: 37px;
+    font-weight: 500;
+    color: #fff;
+}
+.subcribe__button{
+    background-color: var(--accent);
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 35px;
+}
+.subcribe__mail{
+    font-size: 12px;
+    padding: 10px 100px 10px 10px;
+}
+/* Футер */
+.footer__text {
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 210px;
+}
+.footer__links {
+    max-width: 210px;
+    font-size: 14px;
+    line-height: 2.5;
+}
+b {
+    text-transform: uppercase;
+    font-size: 10px;
+}
